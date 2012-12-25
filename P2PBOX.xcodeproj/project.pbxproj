@@ -1,0 +1,301 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FFC71811689813300B8855F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFC71801689813300B8855F /* UIKit.framework */; };
+		6FFC71831689813300B8855F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFC71821689813300B8855F /* Foundation.framework */; };
+		6FFC71851689813300B8855F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFC71841689813300B8855F /* CoreGraphics.framework */; };
+		6FFC71871689813300B8855F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFC71861689813300B8855F /* CoreData.framework */; };
+		6FFC718D1689813300B8855F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FFC718B1689813300B8855F /* InfoPlist.strings */; };
+		6FFC718F1689813300B8855F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFC718E1689813300B8855F /* main.m */; };
+		6FFC71931689813300B8855F /* PAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFC71921689813300B8855F /* PAppDelegate.m */; };
+		6FFC71951689813300B8855F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FFC71941689813300B8855F /* Default.png */; };
+		6FFC71971689813300B8855F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FFC71961689813300B8855F /* Default@2x.png */; };
+		6FFC71991689813400B8855F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FFC71981689813400B8855F /* Default-568h@2x.png */; };
+		6FFC719C1689813400B8855F /* P2PBOX.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FFC719A1689813400B8855F /* P2PBOX.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6FFC717C1689813300B8855F /* P2PBOX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = P2PBOX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FFC71801689813300B8855F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6FFC71821689813300B8855F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6FFC71841689813300B8855F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6FFC71861689813300B8855F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6FFC718A1689813300B8855F /* P2PBOX-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "P2PBOX-Info.plist"; sourceTree = "<group>"; };
+		6FFC718C1689813300B8855F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6FFC718E1689813300B8855F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6FFC71901689813300B8855F /* P2PBOX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "P2PBOX-Prefix.pch"; sourceTree = "<group>"; };
+		6FFC71911689813300B8855F /* PAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAppDelegate.h; sourceTree = "<group>"; };
+		6FFC71921689813300B8855F /* PAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAppDelegate.m; sourceTree = "<group>"; };
+		6FFC71941689813300B8855F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6FFC71961689813300B8855F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6FFC71981689813400B8855F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6FFC719B1689813400B8855F /* P2PBOX.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = P2PBOX.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FFC71791689813300B8855F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FFC71811689813300B8855F /* UIKit.framework in Frameworks */,
+				6FFC71831689813300B8855F /* Foundation.framework in Frameworks */,
+				6FFC71851689813300B8855F /* CoreGraphics.framework in Frameworks */,
+				6FFC71871689813300B8855F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FFC71711689813300B8855F = {
+			isa = PBXGroup;
+			children = (
+				6FFC71881689813300B8855F /* P2PBOX */,
+				6FFC717F1689813300B8855F /* Frameworks */,
+				6FFC717D1689813300B8855F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FFC717D1689813300B8855F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FFC717C1689813300B8855F /* P2PBOX.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FFC717F1689813300B8855F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FFC71801689813300B8855F /* UIKit.framework */,
+				6FFC71821689813300B8855F /* Foundation.framework */,
+				6FFC71841689813300B8855F /* CoreGraphics.framework */,
+				6FFC71861689813300B8855F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FFC71881689813300B8855F /* P2PBOX */ = {
+			isa = PBXGroup;
+			children = (
+				6FFC71911689813300B8855F /* PAppDelegate.h */,
+				6FFC71921689813300B8855F /* PAppDelegate.m */,
+				6FFC719A1689813400B8855F /* P2PBOX.xcdatamodeld */,
+				6FFC71891689813300B8855F /* Supporting Files */,
+			);
+			path = P2PBOX;
+			sourceTree = "<group>";
+		};
+		6FFC71891689813300B8855F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FFC718A1689813300B8855F /* P2PBOX-Info.plist */,
+				6FFC718B1689813300B8855F /* InfoPlist.strings */,
+				6FFC718E1689813300B8855F /* main.m */,
+				6FFC71901689813300B8855F /* P2PBOX-Prefix.pch */,
+				6FFC71941689813300B8855F /* Default.png */,
+				6FFC71961689813300B8855F /* Default@2x.png */,
+				6FFC71981689813400B8855F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FFC717B1689813300B8855F /* P2PBOX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FFC719F1689813400B8855F /* Build configuration list for PBXNativeTarget "P2PBOX" */;
+			buildPhases = (
+				6FFC71781689813300B8855F /* Sources */,
+				6FFC71791689813300B8855F /* Frameworks */,
+				6FFC717A1689813300B8855F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = P2PBOX;
+			productName = P2PBOX;
+			productReference = 6FFC717C1689813300B8855F /* P2PBOX.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FFC71731689813300B8855F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = P;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = p2pmsg;
+			};
+			buildConfigurationList = 6FFC71761689813300B8855F /* Build configuration list for PBXProject "P2PBOX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6FFC71711689813300B8855F;
+			productRefGroup = 6FFC717D1689813300B8855F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FFC717B1689813300B8855F /* P2PBOX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FFC717A1689813300B8855F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FFC718D1689813300B8855F /* InfoPlist.strings in Resources */,
+				6FFC71951689813300B8855F /* Default.png in Resources */,
+				6FFC71971689813300B8855F /* Default@2x.png in Resources */,
+				6FFC71991689813400B8855F /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FFC71781689813300B8855F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FFC718F1689813300B8855F /* main.m in Sources */,
+				6FFC71931689813300B8855F /* PAppDelegate.m in Sources */,
+				6FFC719C1689813400B8855F /* P2PBOX.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6FFC718B1689813300B8855F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FFC718C1689813300B8855F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6FFC719D1689813400B8855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6FFC719E1689813400B8855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FFC71A01689813400B8855F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "P2PBOX/P2PBOX-Prefix.pch";
+				INFOPLIST_FILE = "P2PBOX/P2PBOX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6FFC71A11689813400B8855F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "P2PBOX/P2PBOX-Prefix.pch";
+				INFOPLIST_FILE = "P2PBOX/P2PBOX-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FFC71761689813300B8855F /* Build configuration list for PBXProject "P2PBOX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FFC719D1689813400B8855F /* Debug */,
+				6FFC719E1689813400B8855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FFC719F1689813400B8855F /* Build configuration list for PBXNativeTarget "P2PBOX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FFC71A01689813400B8855F /* Debug */,
+				6FFC71A11689813400B8855F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6FFC719A1689813400B8855F /* P2PBOX.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6FFC719B1689813400B8855F /* P2PBOX.xcdatamodel */,
+			);
+			currentVersion = 6FFC719B1689813400B8855F /* P2PBOX.xcdatamodel */;
+			path = P2PBOX.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6FFC71731689813300B8855F /* Project object */;
+}
