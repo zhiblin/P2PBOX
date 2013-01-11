@@ -7,6 +7,13 @@
 //
 
 #import "PAppDelegate.h"
+#import "PNEWSViewController.h"
+#import "PHistoryViewController.h"
+#import "PDisturbViewController.h"
+#import "PFavoriteViewController.h"
+#import "PSettingViewController.h"
+#import "PCategory.h"
+#import "PDetailMsg.h"
 
 @implementation PAppDelegate
 
@@ -28,7 +35,91 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    /*
+    PCategory *pc = (PCategory *)[NSEntityDescription insertNewObjectForEntityForName:@"PCategory" inManagedObjectContext:self.managedObjectContext];
+    pc.pCategoryID = @"1";
+    pc.pCategoryName = @"国际美食";
+    pc.pCategoryJudge = @"1";
+    NSDateFormatter *timeFormatter=[[NSDateFormatter alloc]init];
+    [timeFormatter setDateFormat:@"yyyy-MM-dd 'at' HH:mm"];
+    pc.pCategoryDate = [NSDate date];
+    //[self saveContext];
+    [pc release];
+    PCategory *pc1 = (PCategory *)[NSEntityDescription insertNewObjectForEntityForName:@"PCategory" inManagedObjectContext:self.managedObjectContext];
+    pc1.pCategoryID = @"2";
+    pc1.pCategoryName = @"交通银行";
+    pc1.pCategoryJudge = @"1";
+    pc1.pCategoryDate = [NSDate date];
+    //[self saveContext];
+    PCategory *pc2 = (PCategory *)[NSEntityDescription insertNewObjectForEntityForName:@"PCategory" inManagedObjectContext:self.managedObjectContext];
+    pc2.pCategoryID = @"3";
+    pc2.pCategoryName = @"北京银行";
+    pc2.pCategoryJudge = @"1";
+    pc2.pCategoryDate = [NSDate date];
+    
+   
+   
+    PDetailMsg *pd = (PDetailMsg *)[NSEntityDescription insertNewObjectForEntityForName:@"PDetailMsg" inManagedObjectContext:self.managedObjectContext];
+    pd.pCategoryID =@"1";
+    pd.pDetailMsgID = @"1";
+    //pd.pDetailDate = [NSDate date];
+    pd.pDetailMsgName = @"厦门扁食";
+    pd.pDetailMsgContext = @"1938年12月，5只大熊猫被走私到英国，其中4只被伦敦动物园买下。曾为英皇室拍摄照片后来做过战地记者的摄影师 Bert Hardy 正给大熊猫拍照，正好大熊猫又爬上凳子做出为他儿子拍照的动作。";
+    pd.pDetailMsgLat = @"99.9493";
+    pd.pDetailMsgLng = @"129.1183";
+    pd.pDetailMsgImageOne = UIImageJPEGRepresentation([UIImage imageNamed:@"jiaozi.jpeg"], 0.9);
+    
+     [self saveContext];
+     */
+    //最新咨询页面
+    PNEWSViewController *newsview = [[[PNEWSViewController alloc] init] autorelease];
+    UINavigationController *newsnav = [[[UINavigationController alloc] initWithRootViewController:newsview] autorelease];
+    UITabBarItem *favorites = [[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemTopRated tag:0]autorelease];
+    newsnav.tabBarItem = favorites;
+    
+    //历史纪录页面
+    PHistoryViewController *historyview = [[[PHistoryViewController alloc] init] autorelease];
+    UINavigationController *historynav = [[[UINavigationController alloc] initWithRootViewController:historyview] autorelease];
+    UITabBarItem *history = [[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemHistory tag:1]autorelease];
+    historynav.tabBarItem = history;
+    
+    //勿扰页面
+    PDisturbViewController *disturbview = [[[PDisturbViewController alloc] init] autorelease];
+    UINavigationController *disturbnav = [[[UINavigationController alloc] initWithRootViewController:disturbview] autorelease];
+    UITabBarItem *disturb = [[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed tag:2]autorelease];
+    disturbnav.tabBarItem = disturb;
+    
+    //喜爱页面
+    PFavoriteViewController *favoriteview = [[[PFavoriteViewController alloc] init] autorelease];
+    UINavigationController *favnav = [[[UINavigationController alloc] initWithRootViewController:favoriteview] autorelease];
+    UITabBarItem *favorite = [[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:3]autorelease];
+    favnav.tabBarItem = favorite;
+    
+    //设置页面
+    PSettingViewController *settingview = [[[PSettingViewController alloc] init] autorelease];
+    UINavigationController *settingnav = [[[UINavigationController alloc] initWithRootViewController:settingview] autorelease];
+    
+    UITabBarItem *setting = [[[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemBookmarks tag:4]autorelease];
+    settingnav.tabBarItem = setting;
+    
+    
+    NSMutableArray *viewContrllers = [NSMutableArray arrayWithObjects:
+                                      newsnav,
+                                      historynav,
+                                      disturbnav,
+                                      favnav,
+                                      settingnav,
+                                      nil];
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = [NSArray arrayWithArray:viewContrllers];
+    
+    [self.window addSubview:self.tabBarController.view];
+    self.window.rootViewController = self.tabBarController;
+    
+    
     [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
