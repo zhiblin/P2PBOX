@@ -7,7 +7,7 @@
 //
 
 #import "PNEWSViewController.h"
-//#import "PLBSViewController.h"
+#import "PLBSViewController.h"
 #import "PCategory.h"
 #import "PContextListViewController.h"
 #import "PEditViewController.h"
@@ -143,8 +143,7 @@
 
 
 -(void)tolocation{
-   // PLBSViewController *plbs =  [[PLBSViewController alloc] init];
-    //[self.navigationController pushViewController:plbs animated:YES];
+   
     
     PEditViewController *editview = [[PEditViewController alloc] init];
     [self.navigationController pushViewController:editview animated:YES];
@@ -152,7 +151,10 @@
 }
 
 -(void)toedit{
-    [self.tableview setEditing:!self.tableview.editing animated:YES];
+    
+    PLBSViewController *plbs =  [[PLBSViewController alloc] init];
+    [self.navigationController pushViewController:plbs animated:YES];
+//    [self.tableview setEditing:!self.tableview.editing animated:YES];
 }
 
 

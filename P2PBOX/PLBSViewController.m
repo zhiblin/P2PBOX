@@ -59,7 +59,7 @@
     PMAPViewController *map = [[PMAPViewController alloc] init];
     [self.navigationController pushViewController:map animated:YES];
 }
-
+/*
 - (void) locationManager: (CLLocationManager *) manager didUpdateToLocation:(CLLocation *)newLocation
             fromLocation: (CLLocation *) oldLocation{
     NSString *lat = [[NSString alloc] initWithFormat:@"%g",newLocation.coordinate.latitude];
@@ -76,6 +76,27 @@
     [lat release];
     [lng release];
 }
+*/
+- (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations{
+    
+    CLLocation *location = [locations lastObject];
+    
+    NSString *lat = [[NSString alloc] initWithFormat:@"%g",location.coordinate.latitude];
+    startlatitudetextfield.text = lat;
+    self.latstr = lat;
+    NSString *lng = [[NSString alloc]initWithFormat:@"%g",location.coordinate.longitude];
+    startlongitudetextfield.text = lng;
+    
+    NSString *acc = [[NSString alloc] initWithFormat:@"%g",location.horizontalAccuracy];
+    distancetextfield.text = acc;
+    self.lngstr = lng;
+    
+    [acc release];
+    [lat release];
+    [lng release];
+    
+}
+
  
 - (void) locationManager: (CLLocationManager *) managerdidFailWithError: (NSError *) error {
     NSString *msg = [[NSString alloc]initWithString:@"Error obtaining location"];

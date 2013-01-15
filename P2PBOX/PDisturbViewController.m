@@ -22,7 +22,7 @@
     [super viewDidLoad];
     self.title = @"disturb";
 	// Do any additional setup after loading the view.
-    NSString *googleURL = @"http://www.weather.com.cn/data/cityinfo/101280101.html";
+    NSString *googleURL = @"http://192.168.0.4/";// @"http://www.weather.com.cn/data/cityinfo/101280101.html";
 	NSURL *url = [NSURL URLWithString:googleURL];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
@@ -46,7 +46,7 @@
     NSError *error;
     NSMutableDictionary *iosjson = [NSJSONSerialization JSONObjectWithData:responseData options:kNilOptions error:&error];
     NSLog(@"ios json text is %@",iosjson);
-    
+    /*
     NSMutableDictionary *jsonoSubObj = [iosjson objectForKey:@"weatherinfo"];
     city = [[NSString alloc] initWithFormat:@"%@\n",[jsonoSubObj objectForKey:@"city"]];
     
@@ -54,6 +54,9 @@
     
     temp =[[NSString alloc] initWithFormat:@"%@\n",[jsonoSubObj objectForKey:@"temp1"]];
     
+    [textf setText:city];
+     */
+    city = [iosjson objectForKey:@"username"];
     [textf setText:city];
 }
 

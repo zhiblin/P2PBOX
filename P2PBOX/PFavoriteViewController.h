@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PFavoriteViewController : UIViewController
+@interface PFavoriteViewController : UIViewController<UIWebViewDelegate>
+{
+    UIWebView *webView;
+    UITextField *textField;
+    UIActivityIndicatorView *activityIndicatorView;
+    UIButton *goButton;
+}
+
+
+@property(retain, nonatomic) UIWebView *webView;
+@property(retain, nonatomic) UITextField *textField;
+@property(retain, nonatomic) UIActivityIndicatorView *activityIndicatorView;
+@property(retain, nonatomic) UIButton *goButton;
+
+- (void)goUrl;
+
+- (void)loadWebPageWithString:(NSString*)urlString; 
 
 @end
